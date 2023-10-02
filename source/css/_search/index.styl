@@ -51,7 +51,9 @@
   left: 0
   z-index: 1000
   display: none
-  background: rgba($dark-black, .6)
+  background: var(--trans-bg)
+  backdrop-filter: blur(20px)
+  -webkit-backdrop-filter: blur(20px)
 
 if hexo-config('algolia_search.enable')
   @require 'algolia'
