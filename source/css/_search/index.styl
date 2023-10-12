@@ -8,7 +8,9 @@
   padding: 20px
   width: 600px
   border-radius: 8px
-  background: var(--search-bg)
+  background: var(--trans-bg)
+  backdrop-filter: blur(20px)
+  -webkit-backdrop-filter: blur(20px)
   --search-height: 100vh
   box-shadow: var(--card-box-shadow)
 
@@ -39,7 +41,7 @@
 
       &:hover
         color: $search-color
-  
+
   hr
     margin: 20px auto
     @extend .custom-hr
@@ -52,9 +54,6 @@
   left: 0
   z-index: 1000
   display: none
-  background: var(--trans-bg)
-  backdrop-filter: blur(20px)
-  -webkit-backdrop-filter: blur(20px)
 
 if hexo-config('algolia_search.enable')
   @require 'algolia'
