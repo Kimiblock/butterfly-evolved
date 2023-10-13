@@ -189,6 +189,9 @@ $code-block
 
         .code-lang
           left: 75px
+  if $highlight_theme == 'light' || ($highlight_theme == 'light')
+    figure.highlight
+      border-radius: 6px
 
   if hexo-config('highlight_height_limit')
     .code-expand-btn
