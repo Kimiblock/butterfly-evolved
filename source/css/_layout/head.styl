@@ -132,8 +132,8 @@
       top: -60px
       z-index: 91
       background: var(--trans-bg)
-      backdrop-filter: blur(20px)
-      -webkit-backdrop-filter: blur(20px)
+      backdrop-filter: blur(var(--blur-strength))
+      -webkit-backdrop-filter: blur(var(--blur-strength))
       transition: transform .2s ease-in-out, opacity .2s ease-in-out
       border-bottom: 1px solid var(--color-border-default)
 
@@ -336,8 +336,8 @@
         border-radius: 12px
         background: var(--trans-bg)
         box-shadow: 0 5px 20px -4px rgba($dark-black, .5)
-        backdrop-filter: blur(20px)
-        -webkit-backdrop-filter: blur(20px)
+        backdrop-filter: blur(var(--blur-strength))
+        -webkit-backdrop-filter: blur(var(--blur-strength))
         border: 1px solid var(--color-border-default)
         animation: sub_menus .3s .1s ease both
 
