@@ -6,8 +6,6 @@
     width: 100%
     height: 100%
     background: alpha($dark-black, .2)
-    backdrop-filter: blur(var(--blur-strength))
-    -webkit-backdrop-filter: blur(var(--blur-strength))
 
   #sidebar-menus
     position: fixed
@@ -21,7 +19,9 @@
     height: 100%
     background: var(--trans-bg)
     transition: all .5s
-    border: 1px solid var(--color-border-default)
+    backdrop-filter: blur(var(--blur-strength))
+    -webkit-backdrop-filter: blur(var(--blur-strength))
+    border-left: 1px solid var(--color-border-default)
 
     &.open
       transform: translate3d(-100%, 0, 0)

@@ -11,6 +11,9 @@
   background: var(--trans-bg)
   --search-height: 100vh
   border: 1px solid var(--color-border-default)
+  box-shadow: var(--card-box-shadow)
+  backdrop-filter: blur(var(--blur-strength))
+  -webkit-backdrop-filter: blur(var(--blur-strength))
 
   +maxWidth768()
     top: 0
@@ -30,11 +33,13 @@
     line-height: 1
 
     .search-dialog-title
-      margin-right: 10px
+      float: right
+      margin-bottom: 15px
 
     .search-close-button
-      float: right
+      float: left
       color: $grey
+      margin-bottom: 15px
       transition: color .2s ease-in-out
 
       &:hover
@@ -52,8 +57,7 @@
   left: 0
   z-index: 1000
   display: none
-  backdrop-filter: blur(var(--blur-strength))
-  -webkit-backdrop-filter: blur(var(--blur-strength))
+  background: alpha($dark-black, .2)
 
 if hexo-config('algolia_search.enable')
   @require 'algolia'
