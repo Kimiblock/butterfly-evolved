@@ -229,9 +229,8 @@
       max-width: $toc-mobile-maxWidth
       max-height: calc(100% - 60px)
       width: $toc-mobile-width
-      transition: none
-      transform: scale(0)
-      transform-origin: right bottom
+      transition: all .5s
+      transform: translate3d(120%, 0, 0)
       background: var(--trans-bg)
       backdrop-filter: blur(20px)
       -webkit-backdrop-filter: blur(20px)
@@ -239,6 +238,7 @@
 
       &.open
         transform: scale(1)
+        
 
     .toc-percentage
       float: right
