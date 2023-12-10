@@ -48,7 +48,7 @@ $code-block
     font-family: $code-font-family !important
 
   code
-    border-radius: 6px
+    border-radius: 12px
     padding: 2px 4px
     background: $code-background
     color: $code-foreground
@@ -56,7 +56,7 @@ $code-block
   pre
     @extend $code-block
     padding: 10px 20px
-    border-radius: 6px
+    border-radius: 12px
 
     code
       padding: 0
@@ -161,7 +161,7 @@ $code-block
   if $highlight_theme == 'mac' || ($highlight_theme == 'mac light')
     figure.highlight
       margin: 0 0 24px
-      border-radius: 6px
+      border-radius: 12px
       box-shadow: 0 5px 10px 0 $highlight-mac-border
       -webkit-transform: translateZ(0)
 
@@ -193,7 +193,7 @@ $code-block
           left: 75px
   if $highlight_theme == 'light' || ($highlight_theme == 'light')
     figure.highlight
-      border-radius: 6px
+      border-radius: 12px
 
   if hexo-config('highlight_height_limit')
     .code-expand-btn

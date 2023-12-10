@@ -98,14 +98,14 @@ beautify()
     margin: 0 3px
     padding: 3px 5px
     border: 1px solid #b4b4b4
-    border-radius: 3px
+    border-radius: 6px
     background-color: #f8f8f8
     box-shadow: 0 1px 3px rgba(0, 0, 0, .25), 0 2px 1px 0 rgba(255, 255, 255, .6) inset
     color: #34495e
     white-space: nowrap
     font-weight: 600
     font-size: .9em
-    font-family: Monaco, 'Ubuntu Mono', monospace
+    font-family: monospace
     line-height: 1em
 
   if hexo-config('anchor.click_to_scroll')
@@ -237,13 +237,13 @@ beautify()
     position: relative
     margin: 0 0 20px
     padding: .5em 1.2em
-    border-radius: 3px
+    border-radius: 12px
     background-color: $noticeOutdate-bg
     color: $noticeOutdate-color
 
     if hexo-config('noticeOutdate.style') == 'flat'
       padding: .5em 1em .5em 2.6em
-      border-left: 5px solid $noticeOutdate-border
+      border: 1.5px solid $noticeOutdate-border
 
       &:before
         @extend .fontawesomeIcon
