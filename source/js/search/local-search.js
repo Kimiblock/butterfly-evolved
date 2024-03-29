@@ -305,8 +305,7 @@ window.addEventListener('load', () => {
     bodyStyle.width = '100%'
     bodyStyle.overflow = 'hidden'
     btf.animateIn($searchMask, 'to_show 0.5s')
-    //btf.animateIn($searchDialog, 'titleScale 0.5s')
-    btf.animateIn($searchDialog, 'to_show 0.2s')
+    btf.animateIn($searchDialog, 'titleScale 0.5s')
     setTimeout(() => { input.focus() }, 300)
     if (!loadFlag) {
       !localSearch.isfetched && localSearch.fetchData()
