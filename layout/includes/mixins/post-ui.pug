@@ -27,7 +27,6 @@ mixin postUI(posts)
           if (theme.post_meta.page.date_type)
             span.post-meta-date
               if (theme.post_meta.page.date_type === 'both')
-                i.far.fa-calendar-alt
                 span.article-meta-label=_p('post.created')
                 time.post-meta-date-created(datetime=date_xml(article.date) title=_p('post.created') + ' ' + full_date(article.date))=date(article.date, config.date_format)
                 span.article-meta-separator |
@@ -37,9 +36,7 @@ mixin postUI(posts)
               else
                 - let data_type_updated = theme.post_meta.page.date_type === 'updated'
                 - let date_type = data_type_updated ? 'updated' : 'date'
-                - let date_icon = data_type_updated ? 'fas fa-history' :'far fa-calendar-alt'
                 - let date_title = data_type_updated ? _p('post.updated') : _p('post.created')
-                i(class=date_icon)
                 span.article-meta-label=date_title
                 time(datetime=date_xml(article[date_type]) title=date_title + ' ' + full_date(article[date_type]))=date(article[date_type], config.date_format)
           if (theme.post_meta.page.categories && article.categories.data.length > 0)
