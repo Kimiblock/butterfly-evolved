@@ -13,7 +13,6 @@
             span.post-meta-label= _p('post.created')
             time.post-meta-date-created(datetime=date_xml(page.date) title=_p('post.created') + ' ' + full_date(page.date))=date(page.date, config.date_format)
             span.post-meta-separator |
-            i.fas.fa-history.fa-fw.post-meta-icon
             span.post-meta-label= _p('post.updated')
             time.post-meta-date-updated(datetime=date_xml(page.updated) title=_p('post.updated') + ' ' + full_date(page.updated))=date(page.updated, config.date_format)
           else
