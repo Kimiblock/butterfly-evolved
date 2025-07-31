@@ -12,8 +12,7 @@
   --search-height: 100vh
   border: 1px solid var(--color-border-default)
   //box-shadow: var(--card-box-shadow)
-  backdrop-filter: var(--backdrop-filter)
-  -webkit-backdrop-filter: var(--backdrop-filter)
+
 
   +maxWidth768()
     top: 0
@@ -58,6 +57,8 @@
   z-index: 1000
   display: none
   background: alpha($dark-black, .2)
+  backdrop-filter: var(--backdrop-filter)
+  -webkit-backdrop-filter: var(--backdrop-filter)
 
 if hexo-config('algolia_search.enable')
   @require 'algolia'
